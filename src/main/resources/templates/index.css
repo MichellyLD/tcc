@@ -1,0 +1,35 @@
+/*Universal*/
+
+@import url('https://fonts.googleapis.com/css2?family=Moderustic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Moderustic", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: violet;
+    transition: all 0.15s ease-in;
+}
+
+/* Ul*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+hr{
+    border: 1px solid rgb(130, 137, 128);
+    width: 100%;
+    margin: 5px 0;
+}
+
+#img{
+    width: 60vh;
+}

@@ -1,0 +1,20 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#hes{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videos{
+    width: 80vh;
+    margin-top: 20px;
+}
+iframe{
+    width: 80vh;
+    margin: 10px 0;
+}

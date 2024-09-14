@@ -1,0 +1,38 @@
+#barraLateral {
+    height: 100vh;
+    width: 38.9vh;
+    position: fixed;
+    background-color: #bfbfbf;
+    padding-top: 5vh;
+    z-index: 1000;
+    padding-left: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#perfil img{
+    height: 15vh;
+    width: auto;
+    margin: 1vh 8vh 4vh 8vh;
+}
+
+#barraLateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3.1vh;
+}
+
+#barraLateral ul li {
+    text-align: center;
+}
+
+#barraLateral span{
+    font-size: 5vh;
+    margin: 5px;
+}
+#barraLateral a{
+    display: flex;
+    align-items: center;
+}

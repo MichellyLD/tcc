@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    /*margin: 15vh;*/
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.form{
+    height: 100%;
+    width: auto;
+    /*border:1px solid rgb(192, 192, 192);*/
+    /* justify-content: center; */
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+}
+
+.form h1{
+    font-size: 40px;
+}
+
+.form .campoTxt {
+    height: 50px;
+    margin-bottom: 44px;
+}
+.campoTxt label{
+    padding: 5px;
+}
+.campoTxt input{
+    padding: 5px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid rgb(113, 113, 113);
+    border-radius: 40px;
+}
+img{
+    height: 100%;
+}
+
+.F{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form div{
+    padding: 4px;
+}
+
+button{
+    background-color: #71a6d8;
+    color: rgb(255, 255, 255);
+    padding: 3px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
