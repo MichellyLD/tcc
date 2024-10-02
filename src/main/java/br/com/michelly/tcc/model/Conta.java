@@ -22,7 +22,8 @@ public class Conta{
     private Boolean deficiente;
     @Column(nullable = false)
     private LocalDate datanas;
-    private int idade;
+    @Column(nullable = false, length = 10) 
+    private String genero;
     @Column(nullable = false, length = 100) 
     private String senha;
 
@@ -36,13 +37,13 @@ public class Conta{
     public void setTelefone(String telefone) {        this.telefone = telefone;    }
     public Boolean getDeficiente() {        return deficiente;    }
     public void setDeficiente(Boolean deficiente) {        this.deficiente = deficiente;    }
-    public int getIdade() {        return idade;    }
-    public void setIdade(int idade) {        this.idade = idade;    }
     public String getSenha() {        return senha;    }
     public void setSenha(String senha) {        this.senha = senha;    }
     public String getCpf() {        return cpf;    }
     public void setCpf(String cpf) {        this.cpf = cpf;    }
     public LocalDate getDatanas() {        return datanas;    }
     public void setDatanas(LocalDate datanas) {        this.datanas = datanas;    }
+    public String getGenero() {        return genero;    }
+    public void setGenero(String genero) {        this.genero = genero;    }
     
 }

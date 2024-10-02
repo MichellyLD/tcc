@@ -14,20 +14,29 @@
     <div class="form">
         <h1>Login</h1>
         <hr>
-        <form class="F">
+        <form class="F" method="post" action="/login">
+            <div th:if="${error}" th:text="${error}" style="color: red;"></div>
+            
             <div class="campoTxt">
-                <div class="titulo"><label for="email">Email:</label> </div>
-                <input id="email" type="text"name="email"placeholder="Digite seu email" required>
+                <div class="titulo">
+                    <label for="email">Email:</label>
+                </div>
+                <input id="email" type="text" name="email" placeholder="Digite seu email" required>
             </div>
+    
             <div class="campoTxt">
-                <div class="titulo"><label for="senha">Senha:</label></div>
-                <input id="senha" type="password"name="senha"placeholder="Digite sua senha" required>
+                <div class="titulo">
+                    <label for="senha">Senha:</label>
+                </div>
+                <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
             </div>
+            
             <hr>
-            <a href="usuario">Logar</a>
+            <button type="submit">Logar</button>
         </form>
-        <p>Não tem uma conta? <a href="cadastro">Cadastre-se aqui</a></p>
         
+        <p>Não tem uma conta? <a href="cadastro">Cadastre-se aqui</a></p>
     </div>
+    
 </body>
 </html>
