@@ -48,6 +48,6 @@ public class IndexController {
         @RequestParam("genero") String genero,
         @RequestParam("senha") String senha){
         loginService.registrarUsuario(nome, email, telefone, cpf, deficiente, datanas, genero, senha);
-        return "redirect:/login";
+        return "home";
     }
 }
