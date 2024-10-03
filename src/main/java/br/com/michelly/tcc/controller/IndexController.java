@@ -25,8 +25,8 @@ public class IndexController {
                         Model model) {
         String resultado = loginService.login(email, senha);
 
-        if (resultado.equals("redirect:/home")) {
-            return "redirect:/home";
+        if ("home".equals(resultado)) {
+            return "home";
         } else {
             model.addAttribute("error", resultado);
             return "login";
@@ -49,5 +49,14 @@ public class IndexController {
         @RequestParam("senha") String senha){
         loginService.registrarUsuario(nome, email, telefone, cpf, deficiente, datanas, genero, senha);
         return "home";
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home.html";
+    }
+    @GetMapping("/usuario")
+    public String usuario() {
+        return "usuario.html";
     }
 }

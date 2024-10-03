@@ -23,7 +23,7 @@ public class LoginService {
             Conta usuario = usuarioOp.get();
 
             if (usuario.getSenha().equals(senha)) {
-                return "redirect:/home";
+                return "home";
             } else {
                 return "Senha incorreta!";
             }
