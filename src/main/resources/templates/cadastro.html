@@ -10,6 +10,16 @@
     <title>TCC</title>
 </head>
 <body>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+        const senha = document.getElementById("senha").value;
+        const confirmaSenha = document.getElementById("confirmaSenha").value;
+            if (senha !== confirmaSenha) {
+                event.preventDefault();
+                alert("As senhas não coincidem. Tente novamente.");
+            }
+        });
+    </script>
     <div><img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkrph0XMgpwLuvbyQjgXGAAdH2JFadzFXkQ&s"></div>
     <div>
         <div class="form">
@@ -23,7 +33,7 @@
                     </div>
                     <div class="campoTxt">
                         <div class="titulo"><label for="email">Email</label></div>
-                        <input id="email"type="text" name="email"placeholder="Digite seu email" maxlength="100" required>
+                        <input id="email"type="email" name="email"placeholder="Digite seu email" maxlength="100" required>
                     </div>
                     <div class="campoTxt">
                         <div class="titulo"><label for="telefone">Telefone</label></div>
@@ -31,15 +41,15 @@
                     </div>
                     <div class="campoTxt">
                         <div class="titulo"><label for="cpf">CPF</label></div>
-                        <input id="cpf"type="text" name="cpf"placeholder="Digite seu cpf" minlength="11" maxlength="11" required>
+                        <input id="cpf" type="text" name="cpf"placeholder="Digite seu cpf" minlength="11" maxlength="11" required>
                     </div>
                 </div>
                 <div id="campo2">
                     <div class="opcao">
                         <div class="titulo"><label for="def">Você é deficiente auditivo?</label></div>
                         <div id="boolean">
-                            <input id="def" type="radio" name="auditivo" value="sim">Sim
-                            <input id="def" type="radio" name="auditivo" value="nao">Não
+                            <input id="def" type="radio" name="auditivo" value="sim" required>Sim
+                            <input id="def" type="radio" name="auditivo" value="nao" required>Não
                         </div>
                     </div>
                     <div>
@@ -48,9 +58,9 @@
                     </div>
                     <div>
                         <div class="titulo"><label for="genero">Qual o seu genêro?</label></div>
-                        <input id="genero" type="radio" name="genero" value="mas">Masculino
-                        <input id="genero" type="radio" name="genero" value="fem">Femenino
-                        <input id="genero" type="radio" name="genero" value="out">Outro
+                        <input id="genero" type="radio" name="genero" value="mas" required>Masculino
+                        <input id="genero" type="radio" name="genero" value="fem" required>Femenino
+                        <input id="genero" type="radio" name="genero" value="out" required>Outro
                     </div>
                     <div class="campoTxt">
                         <div class="titulo"><label for="senha">Senha</label></div>
