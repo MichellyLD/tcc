@@ -11,7 +11,7 @@
 </head>
 <body>
     <header id="barraLateral">
-        <div id="perfil"><a href="usuario.html"><img src="https://w7.pngwing.com/pngs/915/511/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png" alt=""></a></div>
+        <div id="perfil"><a href="usuario"><img src="https://w7.pngwing.com/pngs/915/511/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png" alt=""></a></div>
         <ul>
             <li><a href="home"><span class="material-symbols-outlined">home</span>Página Inicial</a></li>
             <li><a href="usuario"><span class="material-symbols-outlined">manage_accounts</span>Usuário</a></li>
@@ -56,15 +56,15 @@
                     </li>
                     <li>
                         <span class="material-symbols-outlined">hearing</span>
-                        <p>Deficiente auditivo:-.</p>
+                        <p>Deficiente auditivo: <span th:text="${def}">deficiente/span>.</p>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">calendar_month</span>
-                        <p>Data de nascimento: -.</p>
+                        <p>Data de nascimento: <span th:text="${data}">data</span>.</p>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">time_auto</span>
-                        <p>Genêro: genero.</p>
+                        <p>Genêro: <span th:text="${genero}">genero</span>.</p>
                     </li>
                     <li>
                         <span class="material-symbols-outlined">school</span>

@@ -23,7 +23,7 @@ public class LoginService {
             Conta usuario = usuarioOp.get();
 
             if (usuario.getSenha().equals(senha)) {
-                return "home";
+                return "usuario";
             } else {
                 return "Senha incorreta!";
             }
